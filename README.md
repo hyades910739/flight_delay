@@ -1,5 +1,5 @@
 # flight prediction
-
+The flight delay prediction task. For more info, please refer to `flight_delay.pdf`.  
 
 * scripts:
 	* `feat_engineer.py`: functions to do the feat_engineer.  
@@ -14,8 +14,8 @@
 	* `model_history/`: model logs.
 	* `plots/`: some plot when EDA.
 	* `models/`: place the model pickle file.
- 
- * Requirements.
+	* `flight_delay.pdf`: slides for this project.  
+ * Requirements.  
  To run the code, please install packages by:
  ```
 pip install -r requirements.txt

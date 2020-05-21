@@ -1,0 +1,63 @@
+Thu May 21 10:54:38 2020 : Logger init
+parameters:
+  use_numeric: True
+  upsampling_rate: 0.3
+  target_col: label
+Thu May 21 10:54:40 2020: start feature engineering...
+Thu May 21 10:55:11 2020: start modeling...
+Thu May 21 10:59:43 2020: start evaluation...
+Thu May 21 11:00:10 2020: evaluation done.
+model info:
+----
+model paras: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 5, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 200, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
+**feature_importances**:
+flight_no_target: 0.38843109926260516
+flight_no_count: 0.119202338908734
+Arrival_target : 0.11195444503407172
+Airline_target : 0.10646794244573543
+tz_target      : 0.044927283220171255
+tz_count       : 0.037366405352677295
+longitude_q10_target: 0.02339221931143782
+altitude       : 0.021766058005821005
+Arrival_count  : 0.019574411467411793
+altitude_q10_target: 0.014675966011426157
+week_from_2013 : 0.01457347150303631
+latitude_q10_target: 0.014073833821539938
+Week           : 0.01377207163777626
+Airline_count  : 0.008844716873798156
+month_from_2013: 0.0071637182235818764
+longitude      : 0.006564398569580517
+std_hour       : 0.006195318389644699
+month          : 0.005966047045671306
+year           : 0.005893102472889825
+latitude       : 0.005882208287869191
+longitude_q10_count: 0.0047862994502132035
+dst_count      : 0.0045038981911322724
+dst_target     : 0.0034784938043363367
+latitude_q10_count: 0.0034601464491738473
+timezone_diff  : 0.003350070537253837
+altitude_q10_count: 0.0018408703306111367
+timezone       : 0.0015712040556370062
+weekday_target : 0.0001906211065540581
+weekday_count  : 0.00013134022960847687
+type_target    : 0.0
+type_count     : 0.0
+**feature_importances**
+train:
+----
+accuracy  : 0.7897564381196498
+ROC_auc   : 0.701103081249831
+precision : 0.695718352355894
+recall    : 0.4897993374468946
+confusion matrix:
+[[705910  67769]
+ [161403 154949]]
+validation:
+----
+accuracy  : 0.8959426995284278
+ROC_auc   : 0.6969833089269506
+precision : 0.20274091798999347
+recall    : 0.47917737789203085
+confusion matrix:
+[[78692  7330]
+ [ 2026  1864]]
